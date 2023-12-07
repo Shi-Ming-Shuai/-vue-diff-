@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "snabbdom": "^3.5.1",
     "webpack": "5",
     "webpack-dev-server": "3"
   },

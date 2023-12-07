@@ -6,6 +6,7 @@ class Vue {
     Object.prototype.toString.call(options.beforeCreate) === '[object Function]' && options.beforeCreate.bind(this)()
     // 初始化数据 data
     this.$data = options.data
+    
     this.proxyData()
     // 数据劫持  存放数据对应的Watcher
     this.$watcherEvent = {}
