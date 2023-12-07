@@ -19,18 +19,10 @@ const patch = init([
 
 const container = document.getElementById("container");
 
-const vnode = h('ul', {}, [
-  h('li', {key:1}, 'a'),
-  h('li', {key:2}, 'b'),
-  h('li', {key:3}, 'c')
-])
+aewfkjlewafj
 patch(container, vnode)
 const 生答案所多= 213
-const vnode2 = h('div', {}, [
-  h('li', {key:2}, 'b'),
-  h('li', {key:1}, 'a'),
+dsafsdaf
   h('li', {key:3}, 'c')
 ])
-btn.addEventListener('click', () => {
-  patch(vnode, vnode2)
-})
+jaksdhfkashdf
