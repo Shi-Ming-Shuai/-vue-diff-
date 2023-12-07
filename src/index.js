@@ -4,12 +4,10 @@ import {
   propsModule,
   styleModule,
   eventListenersModule,
-  as,
   h
 } from "snabbdom";
 
 const patch = init([
-  // 大我的哇
   // Init patch function with chosen modules
   classModule, // makes it easy to toggle classes
   propsModule, // for setting properties on DOM elements
@@ -19,10 +17,18 @@ const patch = init([
 
 const container = document.getElementById("container");
 
-aewfkjlewafj
-patch(container, vnode)
-const 生答案所多= 213
-dsafsdaf
+const vnode = h('ul', {}, [
+  h('li', {key:1}, 'a'),
+  h('li', {key:2}, 'b'),
   h('li', {key:3}, 'c')
 ])
-jaksdhfkashdf
+patch(container, vnode)
+
+const vnode2 = h('div', {}, [
+  h('li', {key:2}, 'b'),
+  h('li', {key:1}, 'a'),
+  h('li', {key:3}, 'c')
+])
+btn.addEventListener('click', () => {
+  patch(vnode, vnode2)
+})
