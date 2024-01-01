@@ -33,3 +33,5 @@
 // btn.addEventListener('click', () => {
 //   patch(vnode, vnode2)
 // })
+
+console.log(123);

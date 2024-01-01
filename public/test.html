@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    const page = document.querySelector('#pages')
+    const children = [...page.children]
+    const deletes = [...document.querySelectorAll('[name=pages] .avg-cols')]
+    for (const item of deletes) {
+      item.lastChild.click()
+    }
+    console.log(deletes);
+  </script>
+</body>
+
+</html>
